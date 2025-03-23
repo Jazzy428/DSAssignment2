@@ -1,0 +1,42 @@
+# Big O Notation in Algorithm Analysis
+
+## What is Big O Notation?
+Big O Notation is a mathematical concept used in computer science to describe the performance of an algorithm in terms of time complexity and space complexity.
+
+## Rules of Big O Notation
+
+1. **Constant Time O(1):**
+   - The execution time remains the same regardless of input size.
+   - Example: Accessing an element in an array by index.
+     ```java
+     int x = arr[5];  // O(1)
+     ```
+
+2. **Linear Time O(n):**
+   - The execution time grows linearly with input size.
+   - Example: Looping through an array.
+     ```java
+     for (int i = 0; i < n; i++) {
+         System.out.println(arr[i]);
+     } // O(n)
+     ```
+
+3. **Quadratic Time O(n²):**
+   - Execution time grows exponentially with nested loops.
+   - Example: A loop inside another loop.
+     ```java
+     for (int i = 0; i < n; i++) {
+         for (int j = 0; j < n; j++) {
+             System.out.println(arr[i] + arr[j]);
+         }
+     } // O(n²)
+     ```
+
+4. **Logarithmic Time O(log n):**
+   - Common in algorithms like binary search.
+   - Example: Searching in a sorted array.
+
+5. **Ignoring Constants & Lower Order Terms:**
+   - If an algorithm runs in `O(2n + 10)`, we simplify it to `O(n)`.
+
+---

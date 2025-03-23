@@ -1,0 +1,15 @@
+# Arrays vs. Linked Lists
+
+## 1. Memory Allocation
+- **Arrays:** Contiguous memory allocation (fixed size).
+- **Linked Lists:** Dynamic memory allocation (nodes stored anywhere).
+
+## 2. Performance
+| Feature | Arrays | Linked Lists |
+|---------|--------|-------------|
+| Access Time | O(1) (Direct index access) | O(n) (Sequential traversal) |
+| Search Time | O(n) (Unsorted), O(log n) (Sorted) | O(n) |
+
+## 3. Insertion & Deletion
+- **Arrays:** Costly insert/delete (shifting elements).
+- **Linked Lists:** Faster insert/delete (pointer manipulation).
